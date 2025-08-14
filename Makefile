@@ -2,10 +2,10 @@ CFLAGS = -g -Wall -Wextra -Werror -fsanitize=address,leak,object-size,bounds-str
 
 all: mysh
 
-mysh: mysh.o builtins.o commands.o variables.o io_helpers.o 
+mysh: mysh.o builtins.o variables.o io_helpers.o 
 	gcc ${CFLAGS} -o $@ $^ 
 
-%.o: %.c builtins.h commands.h variables.h io_helpers.h 
+%.o: %.c builtins.h variables.h io_helpers.h 
 	gcc ${CFLAGS} -c $< 
 
 clean:
