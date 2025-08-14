@@ -15,7 +15,7 @@ This project supports the following commands as builtins:
 - background processes (&)
 - kill
 - ps
-- exit
+- exit (or press Ctrl + D)
 - start-server
 - close-server
 - send
@@ -45,10 +45,11 @@ sudo apt update
 sudo apt install build-essential
 ```
 
-2. Clone the repo.
+2. Clone and navigate to the repo.
 
 ```
-git clone
+git clone https://github.com/arthursusanto/mysh.git
+cd mysh
 ```
 
 3. Build, then run the project.
