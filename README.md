@@ -84,7 +84,7 @@ sudo apt install build-essential
 4. Clone and navigate to the repo.
 
 ```
-git clone
+git clone https://github.com/arthursusanto/mysh.git
 ```
 
 5. Build, then run the project.
